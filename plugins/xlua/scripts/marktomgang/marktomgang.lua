@@ -12,7 +12,6 @@ dr_idle = find_dataref("sim/cockpit/engine/idle_speed[0]")
 sim_heartbeat = 101
 --sim/engines/idle_hi_lo_toggle
 simCMD_toggle_idle = find_command("sim/engines/idle_hi_lo_toggle")
-simCMD_drop_tank = find_command("sim/flight_controls/drop_tank")
 
 -- Plugin funktioner
 sim_heartbeat = 102
@@ -42,7 +41,6 @@ function marktom()
 	if (dr_throttle == 0 and dr_idle == 1) then
 		dr_idle = 0
 		simCMD_toggle_idle:once()
-		simCMD_drop_tank:once()
 		debug = 2
 		sim_heartbeat = 302
 		return
