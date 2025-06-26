@@ -2,11 +2,7 @@
 
 sim_heartbeat = create_dataref("AJ37/system/fuel/heartbeat", "number")
 sim_heartbeat = 10
-function myfilter(currentValue, newValue, amp)
 
-	return ((currentValue*amp) + (newValue))/(amp+1)
-	
-end
 sim_heartbeat = 100
 
 aj37_fuel_sfc_kgs_kN = create_dataref("AJ37/fuel/fuel_sfc_kgs_kN", "number")
@@ -91,6 +87,8 @@ zon3 = 0.0000790 --713
 zon2 = 0.0000436778993647
 dry  = 0.0000284 -- enligt verklig data 0.0000173
 
+fuel100pct = 2100
+
 function flight_start() 
 	sim_heartbeat = 200
 	dr_payload = 0
@@ -106,7 +104,11 @@ function do_on_exit()
 	dr_override_fuel = 0
 end
 
+function myfilter(currentValue, newValue, amp)
 
+	return ((currentValue*amp) + (newValue))/(amp+1)
+	
+end
 
 function isFuelTank(index) 
 	-- sim_heartbeat = 40020
@@ -144,7 +146,7 @@ function totalFuel()
 	aj37_fuel_total = total
 	
 	sim_heartbeat = 4061
-	aj37_fuel_pct = aj37_fuel_total /(4200)*100
+	aj37_fuel_pct = aj37_fuel_total /(fuel100pct)*100
 	jas_fuel_pct = aj37_fuel_pct
 	sim_heartbeat = 4062
 	-- d_fuel = aj37_fuel
@@ -167,26 +169,7 @@ end
 run_at_interval(totalFuel, 1.0)
 
 function EBKLampor()
-	-- if dr_burning > 0 then
-	-- 
-	-- 	if dr_burning < 0.25 then
-	-- 		aj37_ebk_zon1 = 1
-	-- 		aj37_ebk_zon2 = 0
-	-- 		aj37_ebk_zon3 = 0
-	-- 	elseif dr_burning < 0.52 then
-	-- 		aj37_ebk_zon1 = 1
-	-- 		aj37_ebk_zon2 = 1
-	-- 		aj37_ebk_zon3 = 0
-	-- 	elseif dr_burning < 1.1 then
-	-- 		aj37_ebk_zon1 = 1
-	-- 		aj37_ebk_zon2 = 1
-	-- 		aj37_ebk_zon3 = 1
-	-- 	end
-	-- else 
-	-- 	aj37_ebk_zon1 = 0
-	-- 	aj37_ebk_zon2 = 0
-	-- 	aj37_ebk_zon3 = 0
-	-- end
+
 	if dr_burning > 0 then
 		if dr_throttle_pos > 0.958 then
 			aj37_ebk_zon1 = 1
@@ -229,7 +212,7 @@ end
 
 function fusktanka()
    if io_aj37_knapp_fusktank == 1 then
-	dr_m_fuel1 = 4476
+      dr_m_fuel1 = fuel100pct
    end
 end
 
@@ -251,7 +234,7 @@ function before_physics()
 	
 	aj37_fuel_sfc_kgs_kN = dr_fuel_flow[0]/dr_thrust*1000
 	sim_heartbeat = 305
-	EBKLampor()
+	--EBKLampor()
 	sim_heartbeat = 306
 	fusktanka()
 	sim_heartbeat = 307
