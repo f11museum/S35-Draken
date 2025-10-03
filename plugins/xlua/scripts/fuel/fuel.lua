@@ -137,11 +137,11 @@ function totalFuel()
 	-- sim_heartbeat = 400
 	total = total + getFuelInTank(0)
 	-- sim_heartbeat = 401
-	total = total + getFuelInTank(2)
+	total = total + getFuelInTank(1)
 	-- sim_heartbeat = 402
+	total = total + getFuelInTank(2)
 	total = total + getFuelInTank(3)
-	total = total + getFuelInTank(4)
-	total = total + getFuelInTank(5)
+	--total = total + getFuelInTank(5)
 	sim_heartbeat = 406
 	aj37_fuel_total = total
 	
