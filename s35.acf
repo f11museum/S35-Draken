@@ -13149,7 +13149,7 @@ P _wpna/1/_v10_att_z_acf_prt_ref 31.922571182
 P _wpna/1/_v10_is_internal 0
 P _wpna/1/_v10_steers_with_gear 0
 P _wpna/2/_v10_att_body -1
-P _wpna/2/_v10_att_file_stl DropTankDraken500liter.wpn
+P _wpna/2/_v10_att_file_stl placeholder.wpn
 P _wpna/2/_v10_att_gear -1
 P _wpna/2/_v10_att_phi_ref 0.000000000
 P _wpna/2/_v10_att_psi_ref 0.000000000
@@ -13161,7 +13161,7 @@ P _wpna/2/_v10_att_z_acf_prt_ref 38.582675934
 P _wpna/2/_v10_is_internal 0
 P _wpna/2/_v10_steers_with_gear 0
 P _wpna/3/_v10_att_body -1
-P _wpna/3/_v10_att_file_stl DropTankDraken500liter.wpn
+P _wpna/3/_v10_att_file_stl placeholder.wpn
 P _wpna/3/_v10_att_gear -1
 P _wpna/3/_v10_att_phi_ref 0.000000000
 P _wpna/3/_v10_att_psi_ref 0.000000000
@@ -13238,7 +13238,7 @@ P acf/_EFIS_camera_xyz/0 0.000000000
 P acf/_EFIS_camera_xyz/1 0.000000000
 P acf/_EFIS_camera_xyz/2 0.000000000
 P acf/_EFIS_camera_xyz/count 3
-P acf/_EGT_is_C 0
+P acf/_EGT_is_C 1
 P acf/_ESP_stall_discrete 0
 P acf/_FBWL 0.000000000
 P acf/_FBWVco 0.000000000
@@ -14246,11 +14246,11 @@ P acf/_cgZ_aft 33.628608704
 P acf/_cgZ_fwd 32.808399200
 P acf/_cg_in_mac 0
 P acf/_chaff_max 120
-P acf/_chute_line_len/0 0.000000000
+P acf/_chute_line_len/0 49.212596893
 P acf/_chute_line_len/1 0.000000000
 P acf/_chute_line_len/2 0.000000000
 P acf/_chute_line_len/count 3
-P acf/_chute_s/0 0.000000000
+P acf/_chute_s/0 150.000000000
 P acf/_chute_s/1 0.000000000
 P acf/_chute_s/2 0.000000000
 P acf/_chute_s/count 3
@@ -14258,11 +14258,11 @@ P acf/_chute_x/0 0.000000000
 P acf/_chute_x/1 0.000000000
 P acf/_chute_x/2 0.000000000
 P acf/_chute_x/count 3
-P acf/_chute_y/0 0.000000000
+P acf/_chute_y/0 3.280839920
 P acf/_chute_y/1 0.000000000
 P acf/_chute_y/2 0.000000000
 P acf/_chute_y/count 3
-P acf/_chute_z/0 0.000000000
+P acf/_chute_z/0 52.493438721
 P acf/_chute_z/1 0.000000000
 P acf/_chute_z/2 0.000000000
 P acf/_chute_z/count 3
@@ -15401,7 +15401,7 @@ P acf/_face_rocket 40.000000000
 P acf/_fadec_EQ_mixture 0
 P acf/_fadec_EQ_rpm_limit 0
 P acf/_fadec_parameter 0
-P acf/_fadec_prevents_overboost 1
+P acf/_fadec_prevents_overboost 0
 P acf/_fadec_prevents_temp_EGT 0
 P acf/_fadec_prevents_temp_ITT 0
 P acf/_fadec_target/0 0.000000000
@@ -15632,7 +15632,7 @@ P acf/_govnr_dot 0.010000000
 P acf/_gps_has_429_output0 0
 P acf/_gps_has_429_output1 0
 P acf/_green_hi_CHT 280.000000000
-P acf/_green_hi_EGT 0.000000000
+P acf/_green_hi_EGT 750.000000000
 P acf/_green_hi_EPR 0.000000000
 P acf/_green_hi_FF 1.0329E4
 P acf/_green_hi_ITT 544.000000000
@@ -15839,17 +15839,17 @@ P acf/_jato_sfc 0.000000000
 P acf/_jato_theta 0.000000000
 P acf/_jato_thrust 0.000000000
 P acf/_jet_Mach_climb 0.500000000
-P acf/_jet_Mach_hicrz 0.850000024
-P acf/_jet_Mach_locrz 0.750000000
+P acf/_jet_Mach_hicrz 0.899999976
+P acf/_jet_Mach_locrz 0.699999988
 P acf/_jet_Mach_takeoff 0.000000000
 P acf/_jet_N1_climb 100.000000000
-P acf/_jet_N1_hicrz 90.000000000
-P acf/_jet_N1_locrz 80.000000000
+P acf/_jet_N1_hicrz 92.000000000
+P acf/_jet_N1_locrz 88.000000000
 P acf/_jet_N1_takeoff 100.000000000
-P acf/_jet_SFC_climb 1.379999995
-P acf/_jet_SFC_hicrz 1.379999995
-P acf/_jet_SFC_locrz 1.379999995
-P acf/_jet_SFC_takeoff 1.379999995
+P acf/_jet_SFC_climb 1.355000019
+P acf/_jet_SFC_hicrz 1.450000048
+P acf/_jet_SFC_locrz 1.350000024
+P acf/_jet_SFC_takeoff 1.254999995
 P acf/_jett_is_acft 0
 P acf/_jett_is_pipe 0
 P acf/_jett_is_ret 0
@@ -15883,7 +15883,7 @@ P acf/_manufacturer Saab
 P acf/_mast_bump_cyclic_ailn 0.000000000
 P acf/_mast_bump_cyclic_roll 0.000000000
 P acf/_max_CHT 350.000000000
-P acf/_max_EGT 1450.000000000
+P acf/_max_EGT 750.000000000
 P acf/_max_ITT 646.000000000
 P acf/_max_MP_limit 1.000000000
 P acf/_max_atc_alt_ft 0.000000000
@@ -15923,10 +15923,10 @@ P acf/_min_n2_ITT 49.000000000
 P acf/_min_rwy_len 0.000000000
 P acf/_min_vec_on_ground 0.000000000
 P acf/_mixt_x_ctr 0.000000000
-P acf/_n1_power_curve1 9.989999771
-P acf/_n1_power_curve2 3.890000105
-P acf/_n1_rated_thrust 100.000000000
-P acf/_n2_power_curve 2.000000000
+P acf/_n1_power_curve1 9.220000267
+P acf/_n1_power_curve2 4.690000057
+P acf/_n1_rated_thrust 102.000000000
+P acf/_n2_power_curve 1.000000000
 P acf/_name F11 S35 Draken
 P acf/_new_plot_XP3D_cock/0 0
 P acf/_new_plot_outer_acf/0 0
@@ -16032,7 +16032,7 @@ P acf/_radiator_frontal_area 0.000000000
 P acf/_radiator_in_propwash 0
 P acf/_radio_alt_callout_advance 0.000000000
 P acf/_red_hi_CHT 350.000000000
-P acf/_red_hi_EGT 1740.000000000
+P acf/_red_hi_EGT 851.000000000
 P acf/_red_hi_EPR 0.000000000
 P acf/_red_hi_FF 1.3773E4
 P acf/_red_hi_ITT 775.200012207
@@ -16168,7 +16168,7 @@ P acf/_sbrk_on_td_EQ 0
 P acf/_scrolldef_x 0.000000000
 P acf/_scrolldef_y 0.000000000
 P acf/_selective_ties 1
-P acf/_sfc_burner 4.000000000
+P acf/_sfc_burner 3.130000114
 P acf/_shut_off_fuel_at_min_prop 0
 P acf/_single_axis_ap 0
 P acf/_skid_EQ 0
@@ -16345,6 +16345,8 @@ P acf/_tail_with_coll 0.000000000
 P acf/_tailnum SF-058
 P acf/_tailrotor_EQ 0
 P acf/_takeoff_trim_11 0.000000000
+P acf/_tank_name/0 centrerad
+P acf/_tank_name/1 bakre
 P acf/_tank_name/count 9
 P acf/_tank_part_en/0 -1
 P acf/_tank_part_en/1 -8
@@ -16356,7 +16358,7 @@ P acf/_tank_part_en/6 -8
 P acf/_tank_part_en/7 -8
 P acf/_tank_part_en/8 -8
 P acf/_tank_part_en/count 9
-P acf/_tank_psi/0 10.000000000
+P acf/_tank_psi/0 20.000000000
 P acf/_tank_psi/1 10.000000000
 P acf/_tank_psi/2 10.000000000
 P acf/_tank_psi/3 10.000000000
@@ -16366,8 +16368,8 @@ P acf/_tank_psi/6 10.000000000
 P acf/_tank_psi/7 10.000000000
 P acf/_tank_psi/8 10.000000000
 P acf/_tank_psi/count 9
-P acf/_tank_rat/0 1.000000000
-P acf/_tank_rat/1 0.000000000
+P acf/_tank_rat/0 0.600000024
+P acf/_tank_rat/1 0.400000006
 P acf/_tank_rat/2 0.000000000
 P acf/_tank_rat/3 0.000000000
 P acf/_tank_rat/4 0.000000000
@@ -16377,7 +16379,7 @@ P acf/_tank_rat/7 0.000000000
 P acf/_tank_rat/8 0.000000000
 P acf/_tank_rat/count 9
 P acf/_tank_rat_def/0 1.000000000
-P acf/_tank_rat_def/1 0.500000000
+P acf/_tank_rat_def/1 1.000000000
 P acf/_tank_rat_def/2 0.500000000
 P acf/_tank_rat_def/3 0.500000000
 P acf/_tank_rat_def/4 0.500000000
@@ -16386,8 +16388,8 @@ P acf/_tank_rat_def/6 0.500000000
 P acf/_tank_rat_def/7 0.500000000
 P acf/_tank_rat_def/8 0.500000000
 P acf/_tank_rat_def/count 9
-P acf/_tank_role/0 0
-P acf/_tank_role/1 0
+P acf/_tank_role/0 1
+P acf/_tank_role/1 2
 P acf/_tank_role/2 0
 P acf/_tank_role/3 0
 P acf/_tank_role/4 0
@@ -16398,10 +16400,10 @@ P acf/_tank_role/8 0
 P acf/_tank_role/count 9
 P acf/_tank_xyz/0,0 0.000000000
 P acf/_tank_xyz/0,1 0.000000000
-P acf/_tank_xyz/0,2 32.841209412
-P acf/_tank_xyz/1,0 6.988189220
+P acf/_tank_xyz/0,2 33.103675842
+P acf/_tank_xyz/1,0 0.000000000
 P acf/_tank_xyz/1,1 0.000000000
-P acf/_tank_xyz/1,2 41.010498047
+P acf/_tank_xyz/1,2 35.859580994
 P acf/_tank_xyz/2,0 0.000000000
 P acf/_tank_xyz/2,1 0.000000000
 P acf/_tank_xyz/2,2 41.010498047
@@ -16427,10 +16429,10 @@ P acf/_tank_xyz/i_count 9
 P acf/_tank_xyz/j_count 3
 P acf/_tank_xyz_full/0,0 0.000000000
 P acf/_tank_xyz_full/0,1 0.000000000
-P acf/_tank_xyz_full/0,2 32.841209412
-P acf/_tank_xyz_full/1,0 6.988189220
+P acf/_tank_xyz_full/0,2 33.103675842
+P acf/_tank_xyz_full/1,0 0.000000000
 P acf/_tank_xyz_full/1,1 0.000000000
-P acf/_tank_xyz_full/1,2 41.010498047
+P acf/_tank_xyz_full/1,2 35.859580994
 P acf/_tank_xyz_full/2,0 0.000000000
 P acf/_tank_xyz_full/2,1 0.000000000
 P acf/_tank_xyz_full/2,2 41.010498047
@@ -16457,8 +16459,8 @@ P acf/_tank_xyz_full/j_count 3
 P acf/_the_eqlbm 4.130818367
 P acf/_thro_non_vect_props_at_sin_vect 0
 P acf/_thro_x_ctr 0.000000000
-P acf/_throt_max_fwd_emr 1.009999990
-P acf/_throt_max_fwd_nrm 1.009999990
+P acf/_throt_max_fwd_emr 1.000000000
+P acf/_throt_max_fwd_nrm 1.000000000
 P acf/_throt_max_rev 1.000000000
 P acf/_throt_time_jet 0.500000000
 P acf/_throt_time_prop 0.100000001
@@ -16602,7 +16604,7 @@ P acf/_yawbr_v2 599.000000000
 P acf/_yawstring_x 512.000000000
 P acf/_yawstring_y 431.000000000
 P acf/_yel_hi_CHT 0
-P acf/_yel_hi_EGT 0
+P acf/_yel_hi_EGT 1
 P acf/_yel_hi_EPR 0
 P acf/_yel_hi_FF 0
 P acf/_yel_hi_ITT 0
@@ -16944,15 +16946,6 @@ ann_speedbrake_on ann_speedbrake.png
   KEY_FRAME 0.000000 0.000000 1.000000
   KEY_FRAME 1.000000 1.000000
 
-eng_dig_ITT engine_dig_ITT.png
-  POS 1646.142822 168.285797
-  DATAREF 
-  SIZE 2.400000
-  LIGHT_MODE MECHANICAL
-  LIGHT_RHEOSTAT 0
-  KEY_FRAME 0.000000 0.000000 1.000000
-  KEY_FRAME 1.000000 1.000000
-
 ann_master_accept ann_master_accept.p
   POS 299.500000 816.000000
   DATAREF 
@@ -17090,7 +17083,7 @@ ann_oil_press_lo ann_oil_press.png
   KEY_FRAME 1.000000 1.000000
 
 ins_stall stall_GA.png
-  POS 2161.928467 -60.428570
+  POS 2161.500000 -61.000000
   DATAREF 
   SIZE 1.300000
   LIGHT_MODE MECHANICAL
@@ -17128,7 +17121,7 @@ elv_trim_ind_rnd elv_trim_ind_rnd.pn
   KEY_FRAME 1.000000 1.000000
 
 but_hsi_12GPS but_hsi_12GPS.png
-  POS 1908.285767 142.285721
+  POS 1908.000000 142.000000
   DATAREF 
   SIZE 2.000000
   LIGHT_MODE MECHANICAL
@@ -17312,7 +17305,7 @@ rhe_baro_BC rhe_baro_BC.png
   KEY_FRAME 1.000000 1.000000
 
 gen_needle alfa
-  POS 495.857117 953.000000
+  POS 495.000000 953.000000
   IMAGE viggen_alfa
   DATAREF sim/flightmodel2/position/alpha
   LIGHT_MODE MECHANICAL
@@ -17323,9 +17316,44 @@ gen_needle alfa
   OFFSET 0.000000
 
 but_jettison but_jettison.png
-  POS 1834.357178 116.785698
+  POS 1834.500000 116.500000
   DATAREF 
   SIZE 2.000000
+  LIGHT_MODE MECHANICAL
+  LIGHT_RHEOSTAT 0
+  KEY_FRAME 0.000000 0.000000 1.000000
+  KEY_FRAME 1.000000 1.000000
+
+but_chute but_chute.png
+  POS 341.500000 884.500000
+  DATAREF 
+  LIGHT_MODE MECHANICAL
+  LIGHT_RHEOSTAT 0
+  KEY_FRAME 0.000000 0.000000 1.000000
+  KEY_FRAME 1.000000 1.000000
+
+but_burner_enable but_afterburner_ena
+  POS 174.000000 -131.000000
+  DATAREF 
+  LIGHT_MODE MECHANICAL
+  LIGHT_RHEOSTAT 0
+  KEY_FRAME 0.000000 0.000000 1.000000
+  KEY_FRAME 1.000000 1.000000
+
+gen_needle gen_needle.png
+  POS 1694.285767 635.142883
+  DATAREF sim/flightmodel2/engines/afterburner_ratio[0]
+  LIGHT_MODE MECHANICAL
+  LIGHT_RHEOSTAT 0
+  KEY_FRAME 0.000000 180.000000 1.000000
+  KEY_FRAME 1.000000 360.000000
+  IS_DRAGGABLE 0
+  OFFSET 0.000000
+
+eng_rnd_EGT engine_EGT.png
+  POS 1646.857178 174.857147
+  DATAREF 
+  SIZE 2.500000
   LIGHT_MODE MECHANICAL
   LIGHT_RHEOSTAT 0
   KEY_FRAME 0.000000 0.000000 1.000000

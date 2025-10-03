@@ -2920,7 +2920,7 @@
     ],
     "dh_aMax": 32.0,
     "dh_aMin": -15.0,
-    "h_mach": 0.95,
+    "h_mach": 0.85,
     "header": [
         "I\n",
         "1110 Version\n",

@@ -6,6 +6,7 @@ sim_heartbeat = 10
 sim_heartbeat = 100
 
 aj37_fuel_sfc_kgs_kN = create_dataref("AJ37/fuel/fuel_sfc_kgs_kN", "number")
+aj37_fuel_kgs = create_dataref("AJ37/fuel/fuel_kgs", "number")
 
 dr_override_fuel = find_dataref("sim/operation/override/override_fuel_flow")
 
@@ -87,7 +88,7 @@ zon3 = 0.0000790 --713
 zon2 = 0.0000436778993647
 dry  = 0.0000284 -- enligt verklig data 0.0000173
 
-fuel100pct = 2100
+fuel100pct = 2076.19047619 -- 105% vid fulltank
 
 function flight_start() 
 	sim_heartbeat = 200
@@ -130,6 +131,7 @@ end
 
 eta_prev = 0
 total_prev = 0
+fuel_kgs_prev = 0
 function totalFuel()
 	-- sim_heartbeat = 4000
 	total = 0.0
@@ -162,8 +164,11 @@ function totalFuel()
 	-- aj37_fuel_home = aj37_ti_land_dist /4500
 	sim_heartbeat = 408
 	
-	aj37_fuel_b_per_min = ((total_prev - aj37_fuel_total)*60.0) /42
-	total_prev = aj37_fuel_total
+	aj37_fuel_b_per_min = ((total_prev - aj37_fuel_pct)*60.0)
+	total_prev = aj37_fuel_pct
+	
+	aj37_fuel_kgs = fuel_kgs_prev - aj37_fuel_total
+	fuel_kgs_prev = aj37_fuel_total
 end
 
 run_at_interval(totalFuel, 1.0)
@@ -232,7 +237,7 @@ function before_physics()
 		--dr_fuel_flow[0] = dr_thrust * dry
 	end
 	
-	aj37_fuel_sfc_kgs_kN = dr_fuel_flow[0]/dr_thrust*1000
+	aj37_fuel_sfc_kgs_kN = (dr_fuel_flow[0]/dr_thrust)*1000
 	sim_heartbeat = 305
 	--EBKLampor()
 	sim_heartbeat = 306
