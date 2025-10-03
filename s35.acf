@@ -13297,8 +13297,8 @@ P acf/_FBWtheD 0.000000000
 P acf/_FBWtheI 0.000000000
 P acf/_FBWtheP 0.000000000
 P acf/_FF_is_lbsph 0
-P acf/_Gneg 3.000000000
-P acf/_Gpos 9.000000000
+P acf/_Gneg 9.000000000
+P acf/_Gpos 10.000000000
 P acf/_HUD_del_x 240.000000000
 P acf/_HUD_del_y 120.000000000
 P acf/_ICAO U58
@@ -13338,7 +13338,7 @@ P acf/_Vmca_kts 0.000000000
 P acf/_Vne_kts 727.000000000
 P acf/_Vno_kts 727.000000000
 P acf/_Vs_kts 188.000000000
-P acf/_Vso_kts 145.000000000
+P acf/_Vso_kts 175.000000000
 P acf/_Vx_kts 360.000000000
 P acf/_Vy_kts 364.000000000
 P acf/_Vyse_kts 0.000000000
