@@ -3417,7 +3417,7 @@ P _gear/3/_steerdeg_lospeed 0.000000000
 P _gear/3/_strut_comp 0.000000000
 P _gear/3/_strut_max_wgt_def 0.147482201
 P _gear/3/_strut_max_wgt_frc 0.000000000
-P _gear/3/_strut_preload_def -nan
+P _gear/3/_strut_preload_def nan
 P _gear/3/_strut_preload_frc 0.000000000
 P _gear/3/_strut_s1 0.000000000
 P _gear/3/_strut_s2 0.000000000
@@ -13297,8 +13297,8 @@ P acf/_FBWtheD 0.000000000
 P acf/_FBWtheI 0.000000000
 P acf/_FBWtheP 0.000000000
 P acf/_FF_is_lbsph 0
-P acf/_Gneg 2.000000000
-P acf/_Gpos 7.000000000
+P acf/_Gneg 3.000000000
+P acf/_Gpos 9.000000000
 P acf/_HUD_del_x 240.000000000
 P acf/_HUD_del_y 120.000000000
 P acf/_ICAO U58
@@ -14682,7 +14682,7 @@ P acf/_cus_rnd_hi_ang/26 360.000000000
 P acf/_cus_rnd_hi_ang/27 360.000000000
 P acf/_cus_rnd_hi_ang/28 360.000000000
 P acf/_cus_rnd_hi_ang/29 360.000000000
-P acf/_cus_rnd_hi_ang/3 360.000000000
+P acf/_cus_rnd_hi_ang/3 3780.000000000
 P acf/_cus_rnd_hi_ang/30 360.000000000
 P acf/_cus_rnd_hi_ang/31 360.000000000
 P acf/_cus_rnd_hi_ang/32 360.000000000
@@ -14729,11 +14729,11 @@ P acf/_cus_rnd_hi_val/22 1.000000000
 P acf/_cus_rnd_hi_val/23 1.000000000
 P acf/_cus_rnd_hi_val/24 1.000000000
 P acf/_cus_rnd_hi_val/25 1.000000000
-P acf/_cus_rnd_hi_val/26 1.000000000
+P acf/_cus_rnd_hi_val/26 8.000000000
 P acf/_cus_rnd_hi_val/27 1.000000000
 P acf/_cus_rnd_hi_val/28 1.000000000
 P acf/_cus_rnd_hi_val/29 1.000000000
-P acf/_cus_rnd_hi_val/3 1.000000000
+P acf/_cus_rnd_hi_val/3 3.2808E4
 P acf/_cus_rnd_hi_val/30 1.000000000
 P acf/_cus_rnd_hi_val/31 1.000000000
 P acf/_cus_rnd_hi_val/32 1.000000000
@@ -14835,7 +14835,7 @@ P acf/_cus_rnd_lo_ang/26 0.000000000
 P acf/_cus_rnd_lo_ang/27 0.000000000
 P acf/_cus_rnd_lo_ang/28 0.000000000
 P acf/_cus_rnd_lo_ang/29 0.000000000
-P acf/_cus_rnd_lo_ang/3 0.000000000
+P acf/_cus_rnd_lo_ang/3 180.000000000
 P acf/_cus_rnd_lo_ang/30 0.000000000
 P acf/_cus_rnd_lo_ang/31 0.000000000
 P acf/_cus_rnd_lo_ang/32 0.000000000
@@ -14988,7 +14988,7 @@ P acf/_cus_rnd_use/26 0
 P acf/_cus_rnd_use/27 0
 P acf/_cus_rnd_use/28 0
 P acf/_cus_rnd_use/29 0
-P acf/_cus_rnd_use/3 0
+P acf/_cus_rnd_use/3 1
 P acf/_cus_rnd_use/30 0
 P acf/_cus_rnd_use/31 0
 P acf/_cus_rnd_use/32 0
@@ -15424,7 +15424,7 @@ P acf/_feathered_pitch 0.000000000
 P acf/_ff_rat_idle_JET 0.100000001
 P acf/_ff_rat_idle_PRP 0.000000000
 P acf/_ff_rat_idle_turbo 0.000000000
-P acf/_file_writer_version 122015
+P acf/_file_writer_version 122103
 P acf/_fixed_max/0 0.000000000
 P acf/_fixed_max/1 0.000000000
 P acf/_fixed_max/2 0.000000000
@@ -16310,7 +16310,7 @@ P acf/_stab_trim_dn 0.000000000
 P acf/_stab_trim_up 0.000000000
 P acf/_stab_with_Vind 0.000000000
 P acf/_stab_with_flap 0.000000000
-P acf/_stall_warn_aoa 21.299999237
+P acf/_stall_warn_aoa 18.299999237
 P acf/_stall_warn_is_variable 0
 P acf/_start_on_water 0
 P acf/_starter_Ng_jet_cut 50.000000000
@@ -16709,7 +16709,7 @@ gear_handle_HM but_gear_handle_HM.
   KEY_FRAME 1.000000 1.000000
 
 eng_dig_N1 engine_dig_N1.png
-  POS 1700.000000 798.000000
+  POS 1700.142944 830.857117
   DATAREF 
   SIZE 2.400000
   LIGHT_MODE MECHANICAL
@@ -16727,18 +16727,9 @@ ins_tailnum tailnum.png
   KEY_FRAME 1.000000 1.000000
 
 ins_needle needle.png
-  POS 556.000000 113.000000
+  POS 551.857117 160.999969
   DATAREF 
   SIZE 1.600000
-  LIGHT_MODE BACK_LIT_MANUAL
-  LIGHT_RHEOSTAT 0
-  KEY_FRAME 0.000000 0.000000 1.000000
-  KEY_FRAME 1.000000 1.000000
-
-alt_BC_dig alt_BC_dig.png
-  POS 402.000000 503.000000
-  DATAREF 
-  SIZE 2.200000
   LIGHT_MODE BACK_LIT_MANUAL
   LIGHT_RHEOSTAT 0
   KEY_FRAME 0.000000 0.000000 1.000000
@@ -16918,9 +16909,9 @@ but_ann_test but_ann_test.png
   KEY_FRAME 1.000000 1.000000
 
 ins_HSI_12GPS_BC HSI_12GPS_BC.png
-  POS 810.000000 93.000000
+  POS 805.000000 101.714287
   DATAREF 
-  SIZE 1.800000
+  SIZE 1.900000
   LIGHT_MODE BACK_LIT_MANUAL
   LIGHT_RHEOSTAT 0
   KEY_FRAME 0.000000 0.000000 1.000000
@@ -16954,7 +16945,7 @@ ann_speedbrake_on ann_speedbrake.png
   KEY_FRAME 1.000000 1.000000
 
 eng_dig_ITT engine_dig_ITT.png
-  POS 1660.000000 158.000000
+  POS 1646.142822 168.285797
   DATAREF 
   SIZE 2.400000
   LIGHT_MODE MECHANICAL
@@ -17016,7 +17007,7 @@ rhe_ASI_bug_HM rhe_ASI_bug_HM.png
   KEY_FRAME 1.000000 1.000000
 
 ins_RMI_NADF12_GA RMI_NADF12_GA.png
-  POS 2007.000000 359.000000
+  POS 2006.571411 384.571320
   DATAREF 
   SIZE 2.000000
   LIGHT_MODE BACK_LIT_MANUAL
@@ -17117,7 +17108,7 @@ but_generator but_generator.png
   KEY_FRAME 1.000000 1.000000
 
 gen_needle sk60_luftbroms
-  POS 1280.500000 810.000000
+  POS 377.500000 59.000000
   IMAGE sk60_luftbroms
   DATAREF sim/cockpit2/controls/speedbrake_ratio
   LIGHT_MODE MECHANICAL
@@ -17128,7 +17119,7 @@ gen_needle sk60_luftbroms
   OFFSET 0.000000
 
 elv_trim_ind_rnd elv_trim_ind_rnd.pn
-  POS 65.500000 130.500000
+  POS 256.500000 714.500000
   DATAREF 
   SIZE 2.000000
   LIGHT_MODE BACK_LIT_MANUAL
@@ -17174,9 +17165,9 @@ rhe_ins_brt_BC rhe_instrument_brt_
   KEY_FRAME 1.000000 1.000000
 
 vvi5k_BC VVI_5000_BC.png
-  POS 401.500000 260.500000
+  POS 77.500000 101.500000
   DATAREF 
-  SIZE 0.800000
+  SIZE 0.500000
   LIGHT_MODE MECHANICAL
   LIGHT_RHEOSTAT 0
   KEY_FRAME 0.000000 0.000000 1.000000
@@ -17198,37 +17189,21 @@ gen_needle sk60_fuel
   IS_DRAGGABLE 0
   OFFSET 0.000000
 
-gen_needle sk60_airspeed
-  POS 717.857178 681.714355
-  IMAGE sk60_airspeed
-  DATAREF sim/cockpit2/gauges/indicators/airspeed_kts_pilot
-  SIZE 1.200000
-  LIGHT_MODE MECHANICAL
-  LIGHT_RHEOSTAT 0
-  KEY_FRAME 0.000000 0.000000 1.000000
-  KEY_FRAME 54.000000 2.000000 1.000000
-  KEY_FRAME 108.000000 58.000000 1.000000
-  KEY_FRAME 162.000000 106.000000 1.000000
-  KEY_FRAME 432.000000 350.000000 1.000000
-  KEY_FRAME 540.000000 450.000000 1.000000
-  KEY_FRAME 648.000000 540.000000
-  IS_DRAGGABLE 0
-  OFFSET 0.000000
-
-gen_needle sk60_g
-  POS 443.000000 810.000000
-  IMAGE sk60_g
+gen_needle g
+  POS 456.428558 799.571411
+  IMAGE g
   DATAREF sim/flightmodel/forces/g_nrml
-  SIZE 1.500000
+  SIZE 1.800000
   LIGHT_MODE MECHANICAL
   LIGHT_RHEOSTAT 0
-  KEY_FRAME 0.000000 0.000000 1.000000
-  KEY_FRAME 6.000000 180.000000
+  KEY_FRAME 0.000000 180.000000 1.000000
+  KEY_FRAME 6.000000 305.000000 1.000000
+  KEY_FRAME 9.000000 380.000000
   IS_DRAGGABLE 0
   OFFSET 0.000000
 
 gen_needle sk60_g
-  POS 2949.000000 581.000000
+  POS 2948.000000 583.000000
   IMAGE sk60_g
   DATAREF sim/flightmodel/forces/g_nrml
   SIZE 1.500000
@@ -17266,15 +17241,6 @@ eng_dig_ENG engine_dig_RPM_engi
   KEY_FRAME 0.000000 0.000000 1.000000
   KEY_FRAME 10000.000000 10000.000000
 
-mach_adap mach_round.png
-  POS 711.571411 421.142883
-  DATAREF 
-  SIZE 1.700000
-  LIGHT_MODE MECHANICAL
-  LIGHT_RHEOSTAT 0
-  KEY_FRAME 0.000000 0.000000 1.000000
-  KEY_FRAME 1.000000 1.000000
-
 ins_chrono_HM chrono_HM.png
   POS 382.000000 -124.000000
   DATAREF 
@@ -17284,8 +17250,60 @@ ins_chrono_HM chrono_HM.png
   KEY_FRAME 0.000000 0.000000 1.000000
   KEY_FRAME 1.000000 1.000000
 
-AOA_round AOA_round.png
-  POS 607.000000 941.000000
+horiz_small horizon_small.png
+  POS 1102.000000 111.000000
+  DATAREF 
+  SIZE 3.000000
+  LIGHT_MODE MECHANICAL
+  LIGHT_RHEOSTAT 0
+  KEY_FRAME 0.000000 0.000000 1.000000
+  KEY_FRAME 1.000000 1.000000
+
+gen_tape airspeed.png
+  POS 642.500000 609.000000
+  IMAGE airspeed
+  DATAREF sim/cockpit2/gauges/indicators/airspeed_kts_pilot
+  SIZE 0.600000
+  LIGHT_MODE MECHANICAL
+  LIGHT_RHEOSTAT 0
+  KEY_FRAME 75.594002 -550.000000 0.800000
+  KEY_FRAME 107.990997 -420.000000 0.800000
+  KEY_FRAME 161.987000 -200.000000 0.800000
+  KEY_FRAME 269.977997 37.000000 0.800000
+  KEY_FRAME 539.956970 375.000000 0.900000
+  KEY_FRAME 755.939514 540.000000
+
+gen_tape mach.png
+  POS 746.500000 608.000000
+  IMAGE mach
+  DATAREF sim/cockpit2/gauges/indicators/mach_pilot
+  SIZE 0.600000
+  LIGHT_MODE MECHANICAL
+  LIGHT_RHEOSTAT 0
+  KEY_FRAME 0.500000 -590.000000 1.000000
+  KEY_FRAME 1.000000 -220.000000 1.000000
+  KEY_FRAME 2.000000 540.000000
+
+alt_HM alt_HM.png
+  POS 404.000000 504.000000
+  DATAREF 
+  SIZE 1.700000
+  LIGHT_MODE MECHANICAL
+  LIGHT_RHEOSTAT 0
+  KEY_FRAME 0.000000 0.000000 1.000000
+  KEY_FRAME 1.000000 1.000000
+
+baro_pressure_disp baro_pressure_disp.
+  POS 431.000000 313.000000
+  DATAREF 
+  SIZE 5.000000
+  LIGHT_MODE MECHANICAL
+  LIGHT_RHEOSTAT 0
+  KEY_FRAME 0.000000 0.000000 1.000000
+  KEY_FRAME 1.000000 1.000000
+
+rhe_baro_BC rhe_baro_BC.png
+  POS 273.857147 313.714294
   DATAREF 
   SIZE 2.000000
   LIGHT_MODE MECHANICAL
@@ -17293,14 +17311,16 @@ AOA_round AOA_round.png
   KEY_FRAME 0.000000 0.000000 1.000000
   KEY_FRAME 1.000000 1.000000
 
-horiz_small horizon_small.png
-  POS 1103.000000 108.000000
-  DATAREF 
-  SIZE 3.000000
+gen_needle alfa
+  POS 495.857117 953.000000
+  IMAGE viggen_alfa
+  DATAREF sim/flightmodel2/position/alpha
   LIGHT_MODE MECHANICAL
   LIGHT_RHEOSTAT 0
-  KEY_FRAME 0.000000 0.000000 1.000000
-  KEY_FRAME 1.000000 1.000000
+  KEY_FRAME 0.000000 145.000000 1.000000
+  KEY_FRAME 30.000000 395.000000
+  IS_DRAGGABLE 0
+  OFFSET 0.000000
 
 PANEL_2D_END
 PANEL_3D_BEGIN
