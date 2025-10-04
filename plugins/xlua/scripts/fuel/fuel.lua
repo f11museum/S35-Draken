@@ -47,6 +47,8 @@ sim_heartbeat = 1012
 dr_wpn_type = find_dataref("sim/weapons/type") 
 sim_heartbeat = 1013
 dr_wpn_firing = find_dataref("sim/weapons/firing") 
+
+dr_wpn_action_mode = find_dataref("sim/weapons/action_mode") 
 sim_heartbeat = 1014
 dr_wpn_fuel_warhead_mass_now = find_dataref("sim/weapons/fuel_warhead_mass_now") 
 sim_heartbeat = 1015
@@ -113,7 +115,7 @@ end
 
 function isFuelTank(index) 
 	-- sim_heartbeat = 40020
-	if (dr_wpn_type[index] == 23 and dr_wpn_firing[index] == 0) then
+	if (dr_wpn_type[index] == 23 and dr_wpn_firing[index] == 0 and dr_wpn_action_mode[index] == 0) then
 		-- sim_heartbeat = 40021
 		return 1
 	end
