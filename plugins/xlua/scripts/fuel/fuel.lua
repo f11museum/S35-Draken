@@ -37,7 +37,7 @@ aj37_fuel_b_per_min = create_dataref("AJ37/fuel/b_per_min", "number")
 
 aj37_fuel = create_dataref("AJ37/fuel", "number")
 
-io_aj37_knapp_fusktank = find_dataref("JAS/io/aj37/knapp/hojdvarningknapp")
+--io_aj37_knapp_fusktank = find_dataref("JAS/io/aj37/knapp/hojdvarningknapp")
 
 sim_heartbeat = 101
 dr_fire = find_command("sim/weapons/fire_any_armed")
@@ -243,7 +243,7 @@ function before_physics()
 	sim_heartbeat = 305
 	--EBKLampor()
 	sim_heartbeat = 306
-	fusktanka()
+	--fusktanka()
 	sim_heartbeat = 307
 	sim_heartbeat = heartbeat
 	heartbeat = heartbeat + 1
