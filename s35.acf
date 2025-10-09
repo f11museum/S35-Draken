@@ -3417,7 +3417,7 @@ P _gear/3/_steerdeg_lospeed 0.000000000
 P _gear/3/_strut_comp 0.000000000
 P _gear/3/_strut_max_wgt_def 0.147482201
 P _gear/3/_strut_max_wgt_frc 0.000000000
-P _gear/3/_strut_preload_def nan
+P _gear/3/_strut_preload_def -nan
 P _gear/3/_strut_preload_frc 0.000000000
 P _gear/3/_strut_s1 0.000000000
 P _gear/3/_strut_s2 0.000000000
@@ -19414,7 +19414,7 @@ P acf/_hyd_slats 3
 P acf/_hyd_thrust_rev_L 0
 P acf/_hyd_thrust_rev_R 0
 P acf/_idle_rat/0 0.010000000
-P acf/_idle_rat/1 0.020000000
+P acf/_idle_rat/1 0.010000000
 P acf/_idle_rat/count 2
 P acf/_incidence_with_flaps 0
 P acf/_inlet_compression_efficiency 0.899999976
@@ -19529,7 +19529,7 @@ P acf/_min_n2_ITT 49.000000000
 P acf/_min_rwy_len 0.000000000
 P acf/_min_vec_on_ground 0.000000000
 P acf/_mixt_x_ctr 0.000000000
-P acf/_n1_power_curve1 9.220000267
+P acf/_n1_power_curve1 7.000000000
 P acf/_n1_power_curve2 3.779999971
 P acf/_n1_rated_thrust 102.000000000
 P acf/_n2_power_curve 1.000000000
@@ -19772,7 +19772,7 @@ P acf/_sbrk2_up_grnd 0.000000000
 P acf/_sbrk_EQ 1
 P acf/_sbrk_on_td_EQ 0
 P acf/_scrolldef_x 0.000000000
-P acf/_scrolldef_y 0.000000000
+P acf/_scrolldef_y 400.000000000
 P acf/_selective_ties 1
 P acf/_sfc_burner 3.130000114
 P acf/_shut_off_fuel_at_min_prop 0
@@ -19964,7 +19964,7 @@ P acf/_tank_part_en/6 -8
 P acf/_tank_part_en/7 -8
 P acf/_tank_part_en/8 -8
 P acf/_tank_part_en/count 9
-P acf/_tank_psi/0 20.000000000
+P acf/_tank_psi/0 30.000000000
 P acf/_tank_psi/1 10.000000000
 P acf/_tank_psi/2 10.000000000
 P acf/_tank_psi/3 10.000000000
@@ -19995,7 +19995,7 @@ P acf/_tank_rat_def/7 0.500000000
 P acf/_tank_rat_def/8 0.500000000
 P acf/_tank_rat_def/count 9
 P acf/_tank_role/0 1
-P acf/_tank_role/1 2
+P acf/_tank_role/1 0
 P acf/_tank_role/2 0
 P acf/_tank_role/3 0
 P acf/_tank_role/4 0
@@ -20344,7 +20344,7 @@ but_brakes but_brakes.png
   KEY_FRAME 1.000000 1.000000
 
 ann_master_caution ann_master_caution.
-  POS 179.500000 778.000000
+  POS 152.500000 652.000000
   DATAREF 
   SIZE 2.000000
   LIGHT_MODE MECHANICAL
@@ -20517,7 +20517,7 @@ ins_HSI_12GPS_BC HSI_12GPS_BC.png
   KEY_FRAME 1.000000 1.000000
 
 panel_num_N2 dig_N2.png
-  POS 1400.000000 -51.500000
+  POS 1104.000000 -62.500000
   DATAREF 
   SIZE 4.000000
   LIGHT_MODE MECHANICAL
@@ -20544,7 +20544,7 @@ ann_speedbrake_on ann_speedbrake.png
   KEY_FRAME 1.000000 1.000000
 
 ann_master_accept ann_master_accept.p
-  POS 299.500000 816.000000
+  POS 152.500000 716.000000
   DATAREF 
   SIZE 2.000000
   LIGHT_MODE MECHANICAL
@@ -20553,7 +20553,7 @@ ann_master_accept ann_master_accept.p
   KEY_FRAME 1.000000 1.000000
 
 ann_master_warning ann_master_warning.
-  POS 179.500000 810.000000
+  POS 152.500000 684.000000
   DATAREF 
   SIZE 2.000000
   LIGHT_MODE MECHANICAL
@@ -20709,7 +20709,7 @@ gen_needle sk60_luftbroms
   OFFSET 0.000000
 
 elv_trim_ind_rnd elv_trim_ind_rnd.pn
-  POS 333.500000 708.500000
+  POS 101.500000 568.500000
   DATAREF 
   SIZE 2.000000
   LIGHT_MODE BACK_LIT_MANUAL
@@ -20780,7 +20780,7 @@ gen_needle sk60_fuel
   OFFSET 0.000000
 
 gen_needle g
-  POS 456.428558 799.571411
+  POS 457.428558 799.571411
   IMAGE g
   DATAREF sim/flightmodel/forces/g_nrml
   SIZE 1.800000
@@ -20893,7 +20893,7 @@ rhe_baro_BC rhe_baro_BC.png
   KEY_FRAME 1.000000 1.000000
 
 gen_needle alfa
-  POS 495.000000 953.000000
+  POS 272.000000 840.000000
   IMAGE viggen_alfa
   DATAREF sim/flightmodel2/position/alpha
   LIGHT_MODE MECHANICAL
@@ -20904,8 +20904,9 @@ gen_needle alfa
   OFFSET 0.000000
 
 but_chute but_chute.png
-  POS 341.500000 884.500000
+  POS 101.500000 453.500000
   DATAREF 
+  SIZE 2.000000
   LIGHT_MODE MECHANICAL
   LIGHT_RHEOSTAT 0
   KEY_FRAME 0.000000 0.000000 1.000000
@@ -20922,7 +20923,7 @@ gen_needle gen_needle.png
   OFFSET 0.000000
 
 but_burner_enable but_afterburner_ena
-  POS 1479.000000 -162.000000
+  POS 1502.000000 -162.000000
   DATAREF 
   SIZE 2.000000
   LIGHT_MODE MECHANICAL
