@@ -5,7 +5,8 @@
 debug = create_dataref("AJ37/brakechute/want", "number")
 sim_heartbeat = create_dataref("AJ37/heartbeat/brakechute", "number")
 sim_heartbeat = 100
-dr_firebutton =  find_dataref("sim/joystick/fire_key_is_down")
+--dr_firebutton =  find_dataref("sim/joystick/fire_key_is_down")
+dr_firebutton =  find_dataref("sim/cockpit/switches/pitot_heat_on")
 sim_heartbeat = 101
 --sim/engines/idle_hi_lo_toggle
 simCMD_deploy_parachute = find_command("sim/flight_controls/deploy_parachute")
