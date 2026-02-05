@@ -11,11 +11,24 @@ sim_heartbeat = 101
 --sim/engines/idle_hi_lo_toggle
 simCMD_deploy_parachute = find_command("sim/flight_controls/deploy_parachute")
 
+
+
+--Externa Lampor
+
+dr_beacon_lights_on = find_dataref("sim/cockpit/electrical/beacon_lights_on")
+dr_cockpit_lights_on = find_dataref("sim/cockpit/electrical/cockpit_lights_on")
+dr_landing_lights_on = find_dataref("sim/cockpit/electrical/landing_lights_on")
+dr_nav_lights_on = find_dataref("sim/cockpit/electrical/nav_lights_on")
+dr_strobe_lights_on = find_dataref("sim/cockpit/electrical/strobe_lights_on")
+dr_taxi_light_on = find_dataref("sim/cockpit/electrical/taxi_light_on")
+
+
+
 -- Plugin funktioner
 sim_heartbeat = 102
 
 function flight_start() 
-	
+	belysning()
 	
 end
 
@@ -38,6 +51,17 @@ function checkbutton()
 	end
 	button_prev = dr_firebutton
 	sim_heartbeat = 201
+	
+end
+
+function belysning()
+	
+		dr_beacon_lights_on = 1
+		dr_cockpit_lights_on = 1
+		dr_landing_lights_on = 1
+		dr_nav_lights_on = 1
+		dr_strobe_lights_on = 1
+		dr_taxi_light_on = 1
 	
 end
 
